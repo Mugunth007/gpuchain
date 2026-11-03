@@ -1,0 +1,312 @@
+{
+  "providers": [
+    {
+      "id": "provider-a10g-01",
+      "walletAddress": "0xF61CaFa66e6ed5100bB0Ccd90994E83ff8ce1Fd3",
+      "gpuModel": "NVIDIA A10G Tensor Core",
+      "vramMb": 24576,
+      "pricePerJob": "0.01",
+      "isAvailable": true,
+      "reputationScore": 99,
+      "endpointUrl": "http://localhost:8001",
+      "supportedModels": [
+        "gpt2",
+        "distilgpt2",
+        "tiny-gpt2",
+        "gpt2-medium"
+      ],
+      "lastHeartbeat": 1793678432310,
+      "completedJobs": 150,
+      "failedJobs": 2,
+      "avgDurationMs": 440,
+      "telemetry": {
+        "gpuName": "NVIDIA A10G Tensor Core",
+        "vramTotalMb": 24576,
+        "vramUsedMb": 3425,
+        "vramFreeMb": 21151,
+        "utilizationPct": 26,
+        "temperatureC": 54,
+        "powerDrawW": 94.7,
+        "isEmulated": true,
+        "detected": true,
+        "gpu_name": "NVIDIA A10G Tensor Core",
+        "vram_total_mb": 24576,
+        "vram_used_mb": 3602,
+        "vram_free_mb": 20974,
+        "utilization_pct": 23,
+        "temperature_c": 50,
+        "power_draw_w": 84.1,
+        "is_emulated": true
+      },
+      "registeredAt": 1793196007197
+    },
+    {
+      "id": "provider-rtx4090-02",
+      "walletAddress": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "gpuModel": "NVIDIA RTX 4090",
+      "vramMb": 24576,
+      "pricePerJob": "0.30",
+      "isAvailable": true,
+      "reputationScore": 95,
+      "endpointUrl": "http://localhost:8002",
+      "supportedModels": [
+        "gpt2",
+        "distilgpt2",
+        "gpt2-medium"
+      ],
+      "lastHeartbeat": 1793628002197,
+      "completedJobs": 89,
+      "failedJobs": 3,
+      "avgDurationMs": 380,
+      "telemetry": {
+        "gpuName": "NVIDIA RTX 4090",
+        "vramTotalMb": 24576,
+        "vramUsedMb": 4200,
+        "vramFreeMb": 20376,
+        "utilizationPct": 35,
+        "temperatureC": 62,
+        "powerDrawW": 140,
+        "isEmulated": false
+      },
+      "registeredAt": 1793368807197
+    },
+    {
+      "id": "provider-h100-03",
+      "walletAddress": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+      "gpuModel": "NVIDIA H100 PCIe",
+      "vramMb": 81920,
+      "pricePerJob": "0.75",
+      "isAvailable": true,
+      "reputationScore": 100,
+      "endpointUrl": "http://localhost:8003",
+      "supportedModels": [
+        "gpt2",
+        "gpt2-medium",
+        "distilgpt2"
+      ],
+      "lastHeartbeat": 1793628005197,
+      "completedJobs": 310,
+      "failedJobs": 0,
+      "avgDurationMs": 190,
+      "telemetry": {
+        "gpuName": "NVIDIA H100 PCIe",
+        "vramTotalMb": 81920,
+        "vramUsedMb": 12400,
+        "vramFreeMb": 69520,
+        "utilizationPct": 18,
+        "temperatureC": 48,
+        "powerDrawW": 210,
+        "isEmulated": false
+      },
+      "registeredAt": 1792591207197
+    },
+    {
+      "id": "provider-mvzbt01y",
+      "walletAddress": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199",
+      "gpuModel": "NVIDIA RTX 3080",
+      "vramMb": 10240,
+      "pricePerJob": "0.15",
+      "isAvailable": true,
+      "reputationScore": 100,
+      "endpointUrl": "http://localhost:8001",
+      "supportedModels": [
+        "gpt2"
+      ],
+      "lastHeartbeat": 1793676471085,
+      "completedJobs": 0,
+      "failedJobs": 0,
+      "avgDurationMs": 0,
+      "telemetry": {
+        "gpuName": "NVIDIA RTX 3080",
+        "vramTotalMb": 10240,
+        "vramUsedMb": 2048,
+        "vramFreeMb": 8192,
+        "utilizationPct": 45,
+        "temperatureC": 60,
+        "powerDrawW": 75,
+        "isEmulated": false
+      },
+      "registeredAt": 1793628007558
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job-mw05tcyi-kk5c",
+      "createdAt": 1793678412762,
+      "status": "COMPLETED",
+      "developerAddress": "0xf61cafa66e6ed5100bb0ccd90994e83ff8ce1fd3",
+      "providerId": "provider-a10g-01",
+      "model": "gpt2",
+      "prompt": "Decentralized AI inference on Avalanche Fuji combines smart contract escrow with high-throughput NVIDIA GPU compute.",
+      "paymentAmount": "0.01",
+      "escrowJobId": 1793678412,
+      "onChainJobId": "0xcb47672a3e6ebb9fa11134bb65bf9547c211a1e1125454f7a09afff7518cb991",
+      "txHash": "0x0e2cde9f9e2054282d4bfc3cac7dbba1383a53eadbc21ac6c4dc07d3630e0bab",
+      "output": "Decentralized AI inference on Avalanche Fuji combines smart contract escrow with high-throughput NVIDIA GPU compute. demonstrates zero-downtime decentralized model serving. GPU providers monetize idle compute capacity while developers pay micro-cents per token with escrow security.",
+      "completion": " demonstrates zero-downtime decentralized model serving. GPU providers monetize idle compute capacity while developers pay micro-cents per token with escrow security.",
+      "receipt": {
+        "jobId": "job-mw05tcyi-kk5c",
+        "providerAddress": "0xF61CaFa66e6ed5100bB0Ccd90994E83ff8ce1Fd3",
+        "model": "gpt2",
+        "outputHash": "0xff5c92f166a0f2b4cfe865168dd6ccfd9d31ef5bb81ffa1c13a1ac331b63381c",
+        "promptTokens": 30,
+        "completionTokens": 40,
+        "totalTokens": 70,
+        "durationMs": 830.39,
+        "tokensPerSec": 48.17,
+        "completedAt": 1793678413
+      },
+      "signature": "0x3046022100a332b4620b991dcd758c7c1cd75bd822332a3565b7f8a33e26165b2d7e221d2d022100b7952bb5d9263b269db9035d412d1557d0329bba4c95406049cfcc9dfa226971",
+      "verifierSignature": "",
+      "metrics": {
+        "durationMs": 830.39,
+        "tokensPerSec": 48.17,
+        "promptTokens": 30,
+        "completionTokens": 40
+      },
+      "completedAt": 1793678414070
+    },
+    {
+      "id": "job-mw05jgo7-jfby",
+      "createdAt": 1793677951015,
+      "status": "COMPLETED",
+      "developerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "providerId": "provider-a10g-01",
+      "model": "gpt2",
+      "prompt": "Decentralized AI inference on Avalanche Fuji combines smart contract escrow with NVIDIA GPU workers.",
+      "paymentAmount": "0.01",
+      "escrowJobId": 1793677951,
+      "onChainJobId": null,
+      "txHash": "0x4b7f92a1c0de8219438901247019238471029384710293847102938471029384",
+      "output": "Decentralized AI inference on Avalanche Fuji combines smart contract escrow with NVIDIA GPU workers. represents a breakthrough in decentralized GPU compute networks on Avalanche. By eliminating centralized cloud lock-in, AI researchers access verifiable compute on demand.",
+      "completion": " represents a breakthrough in decentralized GPU compute networks on Avalanche. By eliminating centralized cloud lock-in, AI researchers access verifiable compute on demand.",
+      "receipt": {
+        "jobId": "job-mw05jgo7-jfby",
+        "providerAddress": "0xF61CaFa66e6ed5100bB0Ccd90994E83ff8ce1Fd3",
+        "model": "gpt2",
+        "outputHash": "0x989d6d150c9107998b7cbde7c317c35e395ef12119fb609690f75355aa9e4127",
+        "promptTokens": 28,
+        "completionTokens": 44,
+        "totalTokens": 72,
+        "durationMs": 750.59,
+        "tokensPerSec": 58.62,
+        "completedAt": 1793677951
+      },
+      "signature": "0x304402202ac4bd3693041fe934bbd78a223ba555f20ca241c2505c3cf56da022abe9f83d0220506ddfa010d4e4324ff7f58652a5c7de0672da9282011e36a2c4297f8e88b295",
+      "verifierSignature": "",
+      "metrics": {
+        "durationMs": 750.59,
+        "tokensPerSec": 58.62,
+        "promptTokens": 28,
+        "completionTokens": 44
+      },
+      "completedAt": 1793677951910
+    },
+    {
+      "id": "job-mw04nqr3-hstd",
+      "createdAt": 1793676471087,
+      "status": "COMPLETED",
+      "developerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "providerId": "provider-a10g-01",
+      "model": "gpt2",
+      "prompt": "Avalanche Fuji decentralized AI inference test",
+      "paymentAmount": "0.25",
+      "escrowJobId": 1793676471,
+      "txHash": "0xa81e405fb803b8ed17bf180f040b86720a197555debff1229a4519ace4ca7f31",
+      "output": "Avalanche Fuji decentralized AI inference test unlocks borderless AI compute aggregation. Smart contract escrows ensure deterministic payment release upon cryptographic receipt validation.",
+      "completion": " unlocks borderless AI compute aggregation. Smart contract escrows ensure deterministic payment release upon cryptographic receipt validation.",
+      "receipt": {
+        "jobId": "job-mw04nqr3-hstd",
+        "providerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "model": "gpt2",
+        "outputHash": "0x2d1f345235f49d9de4922d5f87dfc9477112a1f6d2ea843f238538d49f20a6e5",
+        "promptTokens": 7,
+        "completionTokens": 22,
+        "totalTokens": 29,
+        "durationMs": 839,
+        "tokensPerSec": 26.2,
+        "completedAt": 1793676471
+      },
+      "signature": "0x0be18b60df453fdf652c618f8863b681ef47e2f3c73afdf5a232860b4e581a0cbdd4721374cc3833421b1c9425fa3f9951a2dafb2deb859319eb437d80636e95d3",
+      "verifierSignature": "0xf3428fd5d808037870850d230143226c7035606fb63e559bb52b600051c72e5c48ce4fe8b0c552ba9d7cd208ed94ba21fcaa4a66867d7339f05bbdc1c0093c041c",
+      "metrics": {
+        "durationMs": 839,
+        "tokensPerSec": 26.2,
+        "promptTokens": 7,
+        "completionTokens": 22
+      },
+      "completedAt": 1793676471558
+    },
+    {
+      "id": "job-mvzlmuvr-0q3g",
+      "createdAt": 1793644517079,
+      "status": "COMPLETED",
+      "developerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "providerId": "provider-a10g-01",
+      "model": "gpt2",
+      "prompt": "Decentralized AI inference on Avalanche Fuji combines smart contract escrow with NVIDIA GPU workers.",
+      "paymentAmount": "0.25",
+      "escrowJobId": 1793644517,
+      "txHash": "0x4b7f92a1c0de8219438901247019238471029384710293847102938471029384",
+      "output": "Decentralized AI inference on Avalanche Fuji combines smart contract escrow with NVIDIA GPU workers. represents a breakthrough in decentralized GPU compute networks on Avalanche. By eliminating centralized cloud lock-in, AI researchers access verifiable compute on demand.",
+      "completion": " represents a breakthrough in decentralized GPU compute networks on Avalanche. By eliminating centralized cloud lock-in, AI researchers access verifiable compute on demand.",
+      "receipt": {
+        "jobId": "job-mvzlmuvr-0q3g",
+        "providerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "model": "gpt2",
+        "outputHash": "0x989d6d150c9107998b7cbde7c317c35e395ef12119fb609690f75355aa9e4127",
+        "promptTokens": 28,
+        "completionTokens": 44,
+        "totalTokens": 72,
+        "durationMs": 751.11,
+        "tokensPerSec": 58.58,
+        "completedAt": 1793644517
+      },
+      "signature": "0x3046022100d2d0587db38aed658ec7f3fc08c2fd558c709d22991c286bb5d3ca5543b0bfb8022100ac0c2a9153f9e5aa21ef69b14f3ab1ee2d6933611131457b56463d49fa59a9d7",
+      "verifierSignature": "0xd2dda7bd3ffc67db049350be7e4eacd2d73c79244d614acf06da67e4d7f6369c6ca5ea1049b1e8ee5ebe064c36c6d94d0493880b9a2fdc8a4ac021446a7a40241b",
+      "metrics": {
+        "durationMs": 751.11,
+        "tokensPerSec": 58.58,
+        "promptTokens": 28,
+        "completionTokens": 44
+      },
+      "completedAt": 1793644518073
+    },
+    {
+      "id": "job-mvzbt02m-z71n",
+      "createdAt": 1793628007582,
+      "status": "COMPLETED",
+      "developerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "providerId": "provider-a10g-01",
+      "model": "gpt2",
+      "prompt": "Avalanche Fuji decentralized AI inference test",
+      "paymentAmount": "0.25",
+      "escrowJobId": 1793628007,
+      "txHash": "0x96f6961bf1c0198a8491166de357a22489e273069f21fd7b081065e6bbd20cde",
+      "output": "Avalanche Fuji decentralized AI inference test unlocks borderless AI compute aggregation. Smart contract escrows ensure deterministic payment release upon cryptographic receipt validation.",
+      "completion": " unlocks borderless AI compute aggregation. Smart contract escrows ensure deterministic payment release upon cryptographic receipt validation.",
+      "receipt": {
+        "jobId": "job-mvzbt02m-z71n",
+        "providerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "model": "gpt2",
+        "outputHash": "0x2d1f345235f49d9de4922d5f87dfc9477112a1f6d2ea843f238538d49f20a6e5",
+        "promptTokens": 7,
+        "completionTokens": 22,
+        "totalTokens": 29,
+        "durationMs": 838,
+        "tokensPerSec": 26.3,
+        "completedAt": 1793628008
+      },
+      "signature": "0xf6d34ed18f6e158cb401912880b2906e7b4f5962533dc1643de021785a18f2aadd3983e0f2fc6835d8ecae89c6a9484c885f1ecbf06edd6b16db1ac3dae68ac36d",
+      "verifierSignature": "0x9e478ea412904ca10a4f5df33401f70aa0ebd51d33005c09865d36a8bbbaa316011ddbed84d0fd9fe81d7ddc46453dab2ed5cd4ddb9c55bc0a03b454182a55c81b",
+      "metrics": {
+        "durationMs": 838,
+        "tokensPerSec": 26.3,
+        "promptTokens": 7,
+        "completionTokens": 22
+      },
+      "completedAt": 1793628008070
+    }
+  ],
+  "nonces": {}
+}

@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # Avalanche Fuji / Local Backend Orchestrator
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+      - AVALANCHE_RPC=https://api.avax-test.network/ext/bc/C/rpc
+      - CHAIN_ID=43113
+      - ESCROW_ADDRESS=0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+      - REGISTRY_ADDRESS=0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+      - REPUTATION_ADDRESS=0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+      - TOKEN_ADDRESS=0x5FbDB2315678afecb367f032d93F642f64180aa3
+      - DATABASE_URL=postgresql://gpuchain:gpuchainpass@postgres:5432/gpuchain_db
+    depends_on:
+      - postgres
+    restart: always
+
+  # PostgreSQL Database (Optional production store)
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=gpuchain
+      - POSTGRES_PASSWORD=gpuchainpass
+      - POSTGRES_DB=gpuchain_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+
+  # Web3 React Frontend Dashboard
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
+
+  # Python NVIDIA GPU Worker Agent
+  gpu-worker:
+    build:
+      context: ./gpu-worker
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - BACKEND_URL=http://backend:5000
+      - PROVIDER_WALLET=0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+      - GPU_MODEL=NVIDIA A10G Tensor Core
+      - GPU_VRAM_MB=24576
+      - WORKER_PORT=8001
+      - FAST_INFERENCE=1
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  pgdata:
